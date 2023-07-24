@@ -1,0 +1,238 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.bg-main-color{
+    background-color: #90caf9;
+}
+.text-main-color{
+    color:#90caf9;
+}
+
+
+/* start nav */
+
+.navbar-brand{
+    width: 5rem !important;
+    border-radius: 50%;
+}
+.navbar-brand img{
+    border-radius: 50%;
+}
+
+.colors{
+    border-radius: 50%;
+    width: 1.875rem;
+    height: 1.875rem;
+    border: none;
+    box-shadow: 0 0.1875rem 0.5rem black;
+}
+.orange{
+ background-color: #E68924;
+}
+.sky{
+ background-color: #90caf9;
+}
+.green{
+ background-color: #2b9f78;
+}
+nav{
+    font-weight: 700;
+}
+
+
+.btn-outline-secondary {
+    background-color: transparent;
+    border-left: none !important;
+    border-radius: 0 0.625rem 0.625rem 0 !important;
+    background-color: white;
+}
+.input-group input{
+    border-right:none;
+    border-radius: 0.625rem 0 0 0.625rem !important;
+
+    background-color: white;
+    color: black;
+}
+.input-group input:focus{
+    background-color: white;
+}
+
+.sign-in{
+    padding: 0.625rem;
+    border-radius:0.625rem;
+    border: none;
+    color: white;
+}
+.language{
+    padding:0.3125rem 0.625rem;
+    border-radius: 0.3125rem;
+    border: none;
+    box-shadow: 0rem 0.125rem 0.3125rem black;
+    font-weight: 600;
+}
+
+/* start main */
+
+.info{
+    margin: auto;
+    box-shadow: 0rem 0.3125rem 0.5rem black;
+    padding: 50px 10px;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.inside-logo-div{
+    position: absolute;
+    bottom: 0;
+    left:5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.inside-logo{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+.inside-logo img{
+    border-radius:50%;
+}
+.info ul{
+    list-style: none;
+    font-weight: 700;
+    padding: 10px;
+}
+
+
+/* start section courses */
+
+.course-item-logo{
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+.course-item-logo:hover{
+    transform: scale(1.2,1.2);
+    box-shadow: 0rem 0.1875rem 0.5rem black;
+    background-color: white !important;
+}
+
+
+/* setting */
+
+.setting{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: transparent;
+    padding: 1.25rem;
+}
+.gear-setting button{
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 0rem 0.125rem 0.3125rem black;
+    padding: 0.625rem;
+}
+.chat-bot{
+    width: 15.625rem;
+    height: 15.625rem;
+    background-color: white;
+    box-shadow: 0 0 0.3125rem black;
+    border-radius: 0.625rem;
+    margin-bottom: 0.3125rem;
+}
+.chat-bot p{
+    font-weight: 700;
+}
+.chat-bot input{
+    width: 80%;
+    border-radius: 0.3125rem;
+    padding:0.3125rem;
+    border: 0.0625rem solid rgba(10, 10, 10, .6);
+    margin: auto;
+}
+.chat-bot button{
+    padding: 0.3125rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-weight: 600;
+    width: 40%;
+}
+.chat-bot textarea{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* login & sign up */
+
+.main-sign-page{
+padding: 1.875rem;
+height: 31.25rem;
+}
+
+.login,.sign{
+    padding: 3.125rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem black;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2.5rem;
+}
+.sign form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2.5rem;
+}
+.sign-in-btn,.sign-up-btn{
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+}
+
+/* about */
+
+.info-about{
+    border: 1px solid black;
+}
+@media screen and (max-width:768px) {
+    body,html{
+        font-size: 15px;
+    }
+    .input-group{
+        margin-bottom: 10px;
+    }
+
+    .info-main{
+        margin: 40px 10px !important;
+        padding:10px !important;
+    }
+
+}
