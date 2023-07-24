@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لنتعلم |عن الصفحة</title>
+    <title>لنتعلم | تسجيل الدخول</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="suggetion-body">
     <header>
         <nav class="navbar navbar-expand-lg bg-main-color">
             <div class="container-fluid">
@@ -63,17 +63,17 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  me-5  mb-2 mb-lg-0  px-5 me-2  w-50 d-flex justify-content-evenly">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-                      </li>
-                    <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">كورساتي</a>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="suggetions.html">اقتراحات</a>
+                    <a class="nav-link" aria-current="page" href="#">كورساتي</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active " href="about.html">عن الصفحة</a>
+                    <a class="nav-link active" href="suggetions.html">اقتراحات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">عن الصفحة</a>
                   </li>
                 </ul>
                 <form class="d-flex  ms-5" role="search">
@@ -88,27 +88,21 @@
             </div>
         </nav>
     </header>
+    <div class="main-sign-page  d-flex justify-content-center align-items-center">
+        <div id="particles-js"></div>
+        <main class="my-5">
+            <h2 class="text-center main-title mb-5"> اقتراحات </h2>
+            <div class="d-flex justify-content-center align-items-center">
+                <form class="d-flex flex-column justify-content-center align-items-center" >
+                    <input  class="mb-2  suggetions-input"  type="text"placeholder="العنوان">
+                    <textarea class="mb-2 suggetions-textarea" name="suggetions" id="suggetions" cols="50" rows="10" placeholder="سجل اقتراحك"></textarea>
+                    <button class="suggetions-btn bg-main-color" type="submit">إرسال</button>
+                </form>
+            </div>
+        </main>
+    </div>
 
-    <main class="mt-5 p-5">
-        <h2 class="text-center main-title">معلومات عن الصفحة</h2>
-        <div class="info info-about my-4">
-            <ul>
-                    <li><p>نشجع تعلمك ويسرنا أن نكون الشعلة المُضاءة في آخر النفق لمشاركتك رحلتك وأن نكون جزءاً من شغفك في التطلع للمزيد من العلم لذلك وفرنا لك منصة :</p></li>             
-                <li><p>اهتتمنا بالإجابة علي جميع أسألتك مع متخصصين في مجال تعلمك وتواصلك معهم بشكل مباشر بسرعة وسهولة وبشكل مجاني.</p></li>
-                <li><p>كما يمكنك مشاركتنا مجال اهتمامك الذي تود تعلمه لمتابعة المختص لتقدمك فيها وتقييم مدي اتقانك للمهارات المتوقعة من المادة.</p></li>
-            </ul>
-            <div class="d-flex justify-content-start  align-items-center inside-logo-div">
-                <p>مرشدك للتعلم الذاتي لتلبية احتياجك</p>
-                <div class="inside-logo me-2">
-                 <img src="images/Geometric A letterform.png" class="w-100"  alt="">
-                </div>
-                </div>
-          </div>
-      
-    </main>
-  
-
-    
+ 
     <div class="setting d-flex justify-content-center align-items-center">
         <div>
           <div class="chat-bot p-3">
@@ -133,6 +127,8 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/all.min.js"></script>
       <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+      <script src="js/particles.min.js"></script>
+      <script src="js/app.js"></script>
       <script src="js/main.js"></script>  
 </body>
 </html>

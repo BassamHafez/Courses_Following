@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="login-body">
     <header>
         <nav class="navbar navbar-expand-lg bg-main-color">
             <div class="container-fluid">
@@ -64,13 +64,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  me-5  mb-2 mb-lg-0  px-5 me-2  w-50 d-flex justify-content-evenly">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">كورساتي</a>
+                    <a class="nav-link" aria-current="page" href="#">كورساتي</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">اقتراحات</a>
+                    <a class="nav-link" href="suggetions.html">اقتراحات</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">عن الصفحة</a>
@@ -90,9 +90,10 @@
     </header>
 
     <div  class="main-sign-page  d-flex justify-content-center align-items-center">
+      <div id="particles-js"></div>
         <div class="login">
             <form>
-                <h5 class="text-center mb-4">مرحباً بعودتك</h5>
+                <h4 class="text-center mb-4 main-title">مرحباً بعودتك</h4>
                 <input class="form-control mb-3" type="email" placeholder="الإيميل">
                 <input class="form-control mb-3" type="password" placeholder="الباسورد">
                     <button type="submit" class="sign-in-btn bg-main-color">تسجيل الدخول</button>             
@@ -103,7 +104,7 @@
 
         <div class="sign">
             <form>
-                <h5 class="text-center mb-4">سجل حساب جديد</h5>
+                <h4 class="text-center mb-4 main-title">سجل حساب جديد</h4>
                 <input class="form-control mb-3" type="email" placeholder="الاسم">
                 <input class="form-control mb-3" type="email" placeholder="الإيميل">
                 <input class="form-control mb-3" type="password" placeholder="الباسورد">
@@ -141,6 +142,8 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/all.min.js"></script>
       <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+      <script src="js/particles.min.js"></script>
+      <script src="js/app.js"></script>
       <script src="js/main.js"></script>  
 </body>
 </html>

@@ -10,12 +10,37 @@ body{
 a{
     text-decoration: none;
 }
+button{
+    transition: all .5s;
+}
+button:hover{
+    background-color: white !important;
+    color:black;
+    font-weight: 700;
+    box-shadow: 0 0 5px black;
+}
 
 .bg-main-color{
     background-color: #90caf9;
 }
 .text-main-color{
     color:#90caf9;
+}
+.main-title
+{   
+    text-shadow: 0 0 4px black;
+    font-weight: 900;
+    color: white;
+}
+#particles-js{
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+    /* color: #4e4d4d; */
 }
 
 
@@ -28,7 +53,13 @@ a{
 .navbar-brand img{
     border-radius: 50%;
 }
+.nav-link{
+    border-bottom: 3px solid transparent;
+}
 
+.nav-item .active{
+    border-bottom: 3px solid white;
+}
 .colors{
     border-radius: 50%;
     width: 1.875rem;
@@ -48,7 +79,6 @@ a{
 nav{
     font-weight: 700;
 }
-
 
 .btn-outline-secondary {
     background-color: transparent;
@@ -78,15 +108,16 @@ nav{
     border-radius: 0.3125rem;
     border: none;
     box-shadow: 0rem 0.125rem 0.3125rem black;
-    font-weight: 600;
+    font-weight: 700;
 }
+
 
 /* start main */
 
 .info{
     margin: auto;
     box-shadow: 0rem 0.3125rem 0.5rem black;
-    padding: 50px 10px;
+    padding: 3.125rem 0.625rem;
     border-radius: 1.25rem;
     position: relative;
 }
@@ -110,7 +141,7 @@ nav{
 .info ul{
     list-style: none;
     font-weight: 700;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 
@@ -159,10 +190,12 @@ nav{
 }
 .chat-bot input{
     width: 80%;
-    border-radius: 0.3125rem;
-    padding:0.3125rem;
-    border: 0.0625rem solid rgba(10, 10, 10, .6);
     margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
 }
 .chat-bot button{
     padding: 0.3125rem;
@@ -174,14 +207,19 @@ nav{
 .chat-bot textarea{
     width: 80%;
     margin: auto;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
 }
 
 
 /* login & sign up */
 
 .main-sign-page{
-padding: 1.875rem;
-height: 31.25rem;
+    padding: 1.875rem;
+    height:31.25rem;
 }
 
 .login,.sign{
@@ -194,26 +232,35 @@ height: 31.25rem;
     justify-content: center;
     align-items: center;
 }
-.login form{
+.login form, .sign form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline: 2.5rem;
+    padding-inline: 50px;
+    width: 100%;
 }
-.sign form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 2.5rem;
+.login form .form-control, .sign form .form-control{
+    background-color: white;
+    box-shadow: 0rem 0.125rem 0.3125rem black;
+    padding: 0.625rem;
+    width: 100%;
+    border: 3px solid transparent;
+
 }
+.login form .form-control:focus, .sign form .form-control:focus{
+    border: 3px solid #90caf9;
+
+}
+
+
+
 .sign-in-btn,.sign-up-btn{
     padding: 0.625rem;
     border-radius: 0.625rem;
     border: none;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     width: 80%;
 }
 
@@ -222,6 +269,28 @@ height: 31.25rem;
 .info-about{
     border: 1px solid black;
 }
+
+/* suggetions */
+
+.suggetion-body,.login-body{
+    overflow: hidden;
+}
+
+.suggetions-input,.suggetions-textarea{
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+.suggetions-btn{
+    padding: 10px 30px;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
 @media screen and (max-width:768px) {
     body,html{
         font-size: 15px;
