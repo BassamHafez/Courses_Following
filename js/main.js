@@ -4,6 +4,7 @@ $('.text-main-color').css("color",localStorage.getItem("color"));
 $(".orange").click(function(){
     $('.bg-main-color').css("backgroundColor","#E68924");
     $('.text-main-color').css("color","#E68924");
+    $('.')
     localStorage.setItem("bgColor","#E68924")
     localStorage.setItem("color","#E68924")
 });
