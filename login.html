@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-main-color">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="images/logo-sky.jpeg" class="w-100" alt="Page logo"></a>
+              <a class="navbar-brand" href="index.html"><img src="images/logo-sky.jpeg" class="logo-img" alt="Page logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -89,13 +89,19 @@
         </nav>
     </header>
 
-    <div  class="main-sign-page  d-flex justify-content-center align-items-center">
+    <div  class="main-sign-page  d-flex justify-content-center align-items-center p-5">
       <div id="particles-js"></div>
         <div class="login">
             <form>
                 <h4 class="text-center mb-4 main-title">مرحباً بعودتك</h4>
-                <input class="form-control mb-3" type="email" placeholder="الإيميل">
-                <input class="form-control mb-3" type="password" placeholder="الباسورد">
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="floatingInput" type="email" placeholder="الإيميل">
+                  <label for="floatingInput">email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input class="form-control" type="password" id="floatingPassword" placeholder="الباسورد">
+                  <label for="floatingPassword"> password</label>
+               </div>
                     <button type="submit" class="sign-in-btn bg-main-color">تسجيل الدخول</button>             
             </form> 
             <h6 class="my-3 text-center">أو</h6>
@@ -105,14 +111,22 @@
         <div class="sign">
             <form>
                 <h4 class="text-center mb-4 main-title">سجل حساب جديد</h4>
-                <input class="form-control mb-3" type="email" placeholder="الاسم">
-                <input class="form-control mb-3" type="email" placeholder="الإيميل">
-                <input class="form-control mb-3" type="password" placeholder="الباسورد">
-          
+                <div class="form-floating mb-2">
+                  <input class="form-control " id="floatingName" type="name" placeholder="الاسم">
+                  <label for="floatingName">name</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input class="form-control" id="floatingInput" type="email" placeholder="الإيميل">
+                  <label for="floatingInput"> email</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input class="form-control" type="password" id="floatingPassword" placeholder="الباسورد">
+                  <label for="floatingPassword"> password</label>
+               </div>          
                     <button type="submit" class="sign-in-btn bg-main-color ">تسجيل حساب</button>         
             </form>  
-            <h6 class="my-3 text-center">أو</h6>
-            <button class="sign-up-btn bg-main-color">سجل دخول</button>
+            <h6 class="my-2 text-center">أو</h6>
+            <button class="sign-up-btn bg-main-color">تسجيل دخول</button>
           
         </div>
     </div>
