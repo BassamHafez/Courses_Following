@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 button{
     transition: all .5s;
@@ -296,6 +297,84 @@ nav{
     font-weight: 700;
     border-radius: 0.625rem;
 }
+
+
+
+
+/* sec9 */
+
+
+.course-item-logo2{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.course-item-logo2:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0rem 0.1875rem 0.5rem black;
+    background-color: white !important;
+}
+
+
+.sec9-cartona{
+    padding:2.5rem;
+    background-color: white;
+    margin:1.25rem 0;
+    box-shadow: 0 0 0.625rem 0.625rem rgb(249, 249, 249);
+    border-radius: 0.625rem;
+}
+
+.sec9-p{
+    font-size: 0.8125rem;
+    line-height: 1.4625rem;
+    margin-top:0.625rem;
+    font-weight: 300;
+    color: #777777;
+    text-decoration:none solid rgb(119, 119, 119);
+    text-align: right;
+}
+.sec9-h6{
+    color:#242424;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-decoration:none solid rgb(36, 36, 36)
+}
+.sec9-span{
+    font-weight: 800;
+    font-size: 0.75rem;
+    line-height: 0.975rem;
+} 
+.c{
+    font-size: 1.125rem;
+    color: #777777;
+    border: 0.0625rem solid #EEEEEE;
+    padding: 0.3125rem;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.fa-facebook-f{
+padding: 0.3125rem 0.5625rem;
+}
+.fa-linkedin-in{
+padding: 0.3125rem 0.4375rem;
+}
+.c:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: 0.0625rem solid black;
+}
+.sec9-img img{
+    border-radius: 50%;
+    width: 7.1875rem;
+}
+
+
+
+
 
 @media screen and (max-width:768px) {
     body,html{
