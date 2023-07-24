@@ -4,9 +4,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+#loading{
+    background-color:whitesmoke;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+    width:0.3125rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    height: 0.125rem;
+    border-radius: 0.625rem;
+}
+
 a{
     text-decoration: none;
     color: black;

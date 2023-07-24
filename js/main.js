@@ -1,6 +1,17 @@
+
+// loading screen
+$(document).ready(function(){
+    $("#loading").fadeOut(400,function(){
+    });
+})
+
+
+
 $('.bg-main-color').css("backgroundColor",localStorage.getItem("bgColor"));
 $('.text-main-color').css("color",localStorage.getItem("color"));
 $('.main-title').css("color",localStorage.getItem("color"));
+
+
 
 
 $(".orange").click(function(){
