@@ -82,8 +82,8 @@ $(".gear").click(function(){
 $(".sign").hide();
 
 $(".sign-up-btn").click(function(){
-    $(".login").slideToggle(500);
-    $(".sign").slideToggle(500);
+    $(".login").toggle(500);
+    $(".sign").toggle(500);
 });
 
 $('.logo-img').attr("src",localStorage.getItem("logo"));
