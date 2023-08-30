@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --black:black;
+    --main-color:#90caf9;
+    --white:white;
+}
 
 #loading{
     background-color:whitesmoke;
@@ -24,37 +29,38 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width:0.3125rem;
+    width:8px;
 }
 
 ::-webkit-scrollbar-track{
-    background-color: rgba(255, 255, 255, 0);
+    background-color:transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: black;
-    height: 0.125rem;
-    border-radius: 0.625rem;
+    background-color: var(--main-color);
+    height: 5%;
+    width: 8px;
+    border-radius: 50%;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 button{
     transition: all .5s;
 }
 button:hover{
-    background-color: white !important;
-    color:black;
+    background-color: var(--white) !important;
+    color:var(--black);
     font-weight: 700;
-    box-shadow: 0 0 0.3125rem black;
+    box-shadow: 0 0 0.3125rem var(--black);
 }
 
 .bg-main-color{
-    background-color: #90caf9;
+    background-color: var(--main-color);
 }
 .text-main-color{
-    color:#90caf9;
+    color:var(--main-color);
 }
 .main-title
 {   
@@ -67,7 +73,7 @@ button:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: var(--black);
     z-index: -1;
 }
 
@@ -87,14 +93,14 @@ button:hover{
 }
 
 .nav-item .active{
-    border-bottom: 0.1875rem solid white;
+    border-bottom: 0.1875rem solid var(--white);
 }
-.colors{
+.orange,.sky,.green{
     border-radius: 50%;
     width: 1.875rem;
     height: 1.875rem;
     border: none;
-    box-shadow: 0 0.1875rem 0.5rem black;
+    box-shadow: 0 0.1875rem 0.5rem var(--black);
 }
 .orange{
  background-color: #E68924;
@@ -105,6 +111,7 @@ button:hover{
 .green{
  background-color: #2b9f78;
 }
+
 nav{
     font-weight: 700;
 }
@@ -113,30 +120,30 @@ nav{
     background-color: transparent;
     border-left: none !important;
     border-radius: 0 0.625rem 0.625rem 0 !important;
-    background-color: white;
+    background-color: var(--white);
 }
 .input-group input{
     border-right:none;
     border-radius: 0.625rem 0 0 0.625rem !important;
 
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 .input-group input:focus{
-    background-color: white;
+    background-color: var(--white);
 }
 
 .sign-in{
     padding: 0.625rem;
     border-radius:0.625rem;
     border: none;
-    color: white;
+    color: var(--white);
 }
 .language{
     padding:0.3125rem 0.625rem;
     border-radius: 0.3125rem;
     border: none;
-    box-shadow: 0rem 0.125rem 0.3125rem black;
+    box-shadow: 0rem 0.125rem 0.3125rem var(--black);
     font-weight: 700;
 }
 
@@ -145,7 +152,7 @@ nav{
 
 .info{
     margin: auto;
-    box-shadow: 0rem 0.3125rem 0.5rem black;
+    box-shadow: 0rem 0.3125rem 0.5rem var(--black);
     padding: 3.125rem 0.625rem;
     border-radius: 1.25rem;
     position: relative;
@@ -185,8 +192,8 @@ nav{
 }
 .course-item-logo:hover{
     transform: scale(1.2,1.2);
-    box-shadow: 0rem 0.1875rem 0.5rem black;
-    background-color: white !important;
+    box-shadow: 0rem 0.1875rem 0.5rem var(--black);
+    background-color: var(--white) !important;
 }
 
 
@@ -202,15 +209,15 @@ nav{
 .gear-setting button{
     border-radius: 50%;
     border: none;
-    background-color: white;
-    box-shadow: 0rem 0.125rem 0.3125rem black;
+    background-color: var(--white);
+    box-shadow: 0rem 0.125rem 0.3125rem var(--black);
     padding: 0.625rem;
 }
 .chat-bot{
     width: 15.625rem;
     height: 15.625rem;
-    background-color: white;
-    box-shadow: 0 0 0.3125rem black;
+    background-color: var(--white);
+    box-shadow: 0 0 0.3125rem var(--black);
     border-radius: 0.625rem;
     margin-bottom: 0.3125rem;
 }
@@ -220,8 +227,8 @@ nav{
 .chat-bot input{
     width: 80%;
     margin: auto;
-    background-color: white;
-    box-shadow: 0 0 0.3125rem black;
+    background-color: var(--white);
+    box-shadow: 0 0 0.3125rem var(--black);
     border-radius: 0.625rem;
     padding: 0.625rem;
     border: none;
@@ -236,8 +243,8 @@ nav{
 .chat-bot textarea{
     width: 80%;
     margin: auto;
-    background-color: white;
-    box-shadow: 0 0 0.3125rem black;
+    background-color: var(--white);
+    box-shadow: 0 0 0.3125rem var(--black);
     border-radius: 0.625rem;
     padding: 0.625rem;
     border: none;
@@ -255,7 +262,7 @@ nav{
     padding: 3.125rem;
     border-radius: 0.625rem;
     box-shadow: 0 0 0.625rem rgba(255, 255, 255, .5);
-    background-color:white;
+    background-color:var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,19 +277,19 @@ nav{
     width: 100%;
 }
 .login form .form-control, .sign form .form-control{
-    background-color: white;
-    box-shadow: 0rem 0.125rem 0.3125rem black;
+    background-color: var(--white);
+    box-shadow: 0rem 0.125rem 0.3125rem var(--black);
     padding: 0.3125rem;
     width: 21.875rem;
     border: 0.1875rem solid transparent;
 
 }
 .login form .form-control:focus, .sign form .form-control:focus{
-    border: 0.1875rem solid #90caf9;
+    border: 0.1875rem solid var(--main-color);
 
 }
 .login form .form-control:hover, .sign form .form-control:hover{
-    border: 0.1875rem solid #90caf9;
+    border: 0.1875rem solid var(--main-color);
 
 }
 
@@ -292,7 +299,7 @@ nav{
     padding: 0.625rem;
     border-radius: 0.625rem;
     border: none;
-    color: white;
+    color: var(--white);
     font-weight: 700;
     width: 80%;
 }
@@ -300,7 +307,7 @@ nav{
 /* about */
 
 .info-about{
-    border: 0.0625rem solid black;
+    border: 0.0625rem solid var(--black);
 }
 
 /* suggetions */
@@ -310,7 +317,7 @@ nav{
 }
 
 .suggetions-input,.suggetions-textarea{
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 0 5px rgb(255, 244, 244);
     border-radius: 0.625rem;
     width: 100%;
@@ -318,7 +325,7 @@ nav{
     border: 0.1875rem solid transparent;
 }
 .suggetions-input:hover,.suggetions-textarea:hover{
-    border: 0.1875rem solid #90caf9 !important;
+    border: 0.1875rem solid var(--main-color) !important;
 }
 .suggetions-btn{
     padding: 0.625rem 1.875rem;
@@ -343,13 +350,13 @@ nav{
 .course-item-logo2:hover{
     transform: scale(1.1,1.1);
     box-shadow: 0rem 0.1875rem 0.5rem black;
-    background-color: white !important;
+    background-color: var(--white) !important;
 }
 
 
 .sec9-cartona{
     padding:2.5rem;
-    background-color: white;
+    background-color: var(--white);
     margin:1.25rem 0;
     box-shadow: 0 0 0.625rem 0.625rem rgb(249, 249, 249);
     border-radius: 0.625rem;
@@ -391,7 +398,7 @@ padding: 0.3125rem 0.5625rem;
 padding: 0.3125rem 0.4375rem;
 }
 .c:hover{
-    color: white;
+    color: var(--white);
     background-color: black;
     cursor: pointer;
     border: 0.0625rem solid black;
