@@ -7,7 +7,13 @@ $(document).ready(function(){
 
 
 $(':root').css("--main-color",localStorage.getItem("mainColor"));
-$('.logo-img').attr("src",localStorage.getItem("logo"))
+
+if(localStorage.getItem("logo")){
+  $('.logo-img').attr("src",localStorage.getItem("logo"))
+}
+else{
+    localStorage.setItem("logo","images/logo-sky.jpeg")
+}
 
 
 
